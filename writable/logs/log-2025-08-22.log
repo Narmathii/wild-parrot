@@ -1,0 +1,22 @@
+CRITICAL - 2025-08-22 06:38:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "welcome_message.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('welcome_message', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-22 10:21:27 --> ErrorException: require(components/footer.php): failed to open stream: No such file or directory
+in APPPATH\Views\components\footer.php on line 147.
+ 1 APPPATH\Views\components\footer.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(components/footer.php): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\ci4projects\\wild-parrot\\app\\Views\\components\\footer.php', 147, [])
+ 2 APPPATH\Views\components\footer.php(147): require()
+ 3 APPPATH\Views\home.php(1039): require('C:\\xampp\\htdocs\\ci4projects\\wild-parrot\\app\\Views\\components\\footer.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4projects\\wild-parrot\\app\\Views\\home.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 7 APPPATH\Controllers\Home.php(9): view('home')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,37 @@
+.footer-logo {
+  margin-bottom: 70px;
+}
+.snowflake {
+  position: fixed;
+  top: 20%; /* start height, adjusted with nth-child */
+  left: -10%; /* start from outside left */
+  z-index: 9999;
+  user-select: none;
+  pointer-events: none; /* don’t block clicks */
+  animation-name: birds-fly, birds-flap;
+  animation-duration: 15s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+canvas.Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.banner-data {
+  position: relative;
+  z-index: 1 !important;
+}
+
