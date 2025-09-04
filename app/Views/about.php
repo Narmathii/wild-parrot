@@ -11,6 +11,7 @@
         transform: translate(-50%, -50%) !important;
         text-align: center !important;
         width: 100% !important;
+
     }
 </style>
 
@@ -20,13 +21,11 @@
 
 
     <!-- cursor start -->
-    <div class="cursor js-cursor">
-        <div class="cursor__wrapper">
-            <div class="cursor__follower js-follower"></div>
-            <div class="cursor__label js-label"></div>
-            <div class="cursor__icon js-icon"></div>
-        </div>
+    <!-- cursor start -->
+    <div id="cursor" class="cursor">
+        <img src="<?= base_url() ?>public/assets/img/cursor3.png" alt="Bird Cursor" class="bird-cursor" width="200px" />
     </div>
+    <!-- cursor end -->
     <!-- cursor end -->
 
     <main>

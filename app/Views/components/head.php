@@ -14,11 +14,13 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="<?= base_url() ?>public/assets/css/vendors.css">
     <link rel="stylesheet" href="<?= base_url() ?>public/assets/css/main.css">
- 
+    <link rel="stylesheet" href="<?= base_url() ?>custom/custom.css">
+
+
 
     <title>Wild Parrot</title>
 
     <script>
-        var base_url = "<?= base_url() ?>" ;
+        var base_url = "<?= base_url() ?>";
     </script>
 </head>

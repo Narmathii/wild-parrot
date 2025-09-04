@@ -17,16 +17,17 @@
   <?php require("components/header.php") ?>
 
 
-
   <!-- cursor start -->
-  <div class="cursor js-cursor">
-    <div class="cursor__wrapper">
-      <div class="cursor__follower js-follower"></div>
-      <div class="cursor__label js-label"></div>
-      <div class="cursor__icon js-icon"></div>
-    </div>
+  <div id="cursor" class="cursor">
+    <img src="<?= base_url() ?>public/assets/img/cursor3.png" alt="Bird Cursor" class="bird-cursor" width="200px" />
   </div>
   <!-- cursor end -->
+
+  <!-- Audio with controls -->
+  <audio id="bg-audio" autoplay loop muted hidden>
+    <source src="<?= base_url('public/audio/nature.mp3') ?>" type="audio/mpeg">
+  </audio>
+
 
   <main>
     <?php require("components/headerMain.php") ?>
@@ -897,50 +898,61 @@
                 <div class="swiper-slide">
                   <div class="text-center">
                     <div class="text-sec text-40 md:text-24">
-                      “Some places are so good to stay in, you don&#39;t want to generate a rush on them. The Swiss
-                      Resort lodge hotel in London is one of them.”
+                      “Investing in Wild Parrot was the best decision I’ve made. The location near Koolikadavu,
+                      Attapadi, is not only tranquil but has great potential for growth. The natural beauty and serene
+                      environment made me feel instantly connected to the land, and I can already see the potential for
+                      high returns. I can’t wait to build my villa here and enjoy the peace and luxury it offers.”
                     </div>
-                    <div class="mt-50">Ali Tufan - Trip Advisor</div>
+                    <div class="mt-50">Ravi Menon, Real Estate Investor</div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="text-center">
                     <div class="text-sec text-40 md:text-24">
-                      “Some places are so good to stay in, you don&#39;t want to generate a rush on them. The Swiss
-                      Resort lodge hotel in London is one of them.”
+                      “Wild Parrot is truly an escape into paradise. The moment I stepped onto the property, I felt
+                      immersed in nature, surrounded by lush greenery and the soothing sounds of nearby rivers. It’s a
+                      rare place where you can experience such harmony between modern living and the beauty of the
+                      outdoors. I’m already planning my next stay here and can’t wait to see the villas in person.”
                     </div>
-                    <div class="mt-50">Ali Tufan - Trip Advisor</div>
+                    <div class="mt-50">Anjali Sharma, Nature Enthusiast</div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="text-center">
                     <div class="text-sec text-40 md:text-24">
-                      “Some places are so good to stay in, you don&#39;t want to generate a rush on them. The Swiss
-                      Resort lodge hotel in London is one of them.”
+                      “Building my dream villa in such a pristine location was always on my mind, and Wild Parrot made
+                      it a reality. The resort-like atmosphere and luxury offerings are second to none. The view of the
+                      mountains and the proximity to Anaikatti makes it the perfect blend of comfort and natural beauty.
+                      I am thrilled with my decision to choose Wild Parrot for my new home.”
                     </div>
-                    <div class="mt-50">Ali Tufan - Trip Advisor</div>
+                    <div class="mt-50">Vishal Kumar, Luxury Villa Buyer</div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="text-center">
                     <div class="text-sec text-40 md:text-24">
-                      “Some places are so good to stay in, you don&#39;t want to generate a rush on them. The Swiss
-                      Resort lodge hotel in London is one of them.”
+                      “Our family had the most unforgettable vacation at Wild Parrot. The resort concept is beyond
+                      amazing, with everything from fine dining to world-class amenities. The kids loved the open spaces
+                      and the peaceful surroundings. It was the perfect place to relax and reconnect with nature, and
+                      we’ll definitely be returning for many more vacations in the future!”
                     </div>
-                    <div class="mt-50">Ali Tufan - Trip Advisor</div>
+                    <div class="mt-50">Nandita & Arun Iyer, Happy Guests</div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="text-center">
                     <div class="text-sec text-40 md:text-24">
-                      “Some places are so good to stay in, you don&#39;t want to generate a rush on them. The Swiss
-                      Resort lodge hotel in London is one of them.”
+                      “As someone who’s passionate about sustainable living, Wild Parrot’s approach really impressed me.
+                      The development respects the natural environment while providing luxury living options. I’m
+                      excited about being part of a community that not only offers modern comforts but also promotes a
+                      balanced and eco-friendly lifestyle. It’s the ideal place to invest in the future while being in
+                      harmony with nature.”
                     </div>
-                    <div class="mt-50">Ali Tufan - Trip Advisor</div>
+                    <div class="mt-50">Sanjay Reddy, Sustainable Living Advocate</div>
                   </div>
                 </div>
 

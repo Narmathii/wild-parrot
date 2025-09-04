@@ -2,6 +2,7 @@
     <div class="footer__main">
         <div class="container">
             <div class="footer__grid">
+
                 <div class="">
                     <h4 class="text-30 fw-500 text-white">About Us</h4>
 
@@ -12,27 +13,7 @@
                     </div>
                 </div>
 
-                <div class="">
-                    <h4 class="text-30 fw-500 text-white">Contact</h4>
 
-                    <div class="d-flex flex-column mt-60 md:mt-20">
-                        <div class="">
-                            <a class="d-block text-15 text-white-60 lh-17" href="#">
-                                Koolikadavu,Attapadi
-                            </a>
-                        </div>
-                        <div class="mt-25">
-                            <a class="d-block text-15 text-white-60" href="#">
-                                wildparrot@gmail.com
-                            </a>
-                        </div>
-                        <div class="mt-10">
-                            <a class="d-block text-15 text-white-60" href="#">
-                                +91 8610930293
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="">
                     <h4 class="text-30 fw-500 text-white">Links</h4>
@@ -65,15 +46,47 @@
                 </div>
 
                 <div class="">
-                    <h4 class="text-30 fw-500 text-white">Newsletter Sign Up</h4>
+                    <h4 class="text-30 fw-500 text-white">Contact</h4>
 
-                    <p class="text-15 text-white-60 mt-60 md:mt-20">Sign up for our news, deals and special offers.</p>
-
-                    <div class="footer__newsletter mt-30">
-                        <input type="Email" placeholder="Your email address">
-                        <button><i class="icon-arrow-right text-white text-20"></i></button>
+                    <div class="d-flex flex-column mt-60 md:mt-20">
+                        <div class="">
+                            <a class="d-block text-15 text-white-60 lh-17" href="#">
+                                Koolikadavu,Attapadi
+                            </a>
+                        </div>
+                        <div class="mt-25">
+                            <a class="d-block text-15 text-white-60" href="#">
+                                wildparrot@gmail.com
+                            </a>
+                        </div>
+                        <div class="mt-10">
+                            <a class="d-block text-15 text-white-60" href="#">
+                                +91 8610930293
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="">
+                    <h4 class="text-30 fw-500 text-white">Our Gallery</h4>
+                    <div class="mt-60">
+                        <a href="<?= base_url() ?>gallery">
+                            <img src="<?= base_url() ?>public/assets/img/wild/about/IMG_5304.JPG" width="30%">
+                            <img src="<?= base_url() ?>public/assets/img/wild/about/IMG_5349.JPG" width="30%">
+                            <img src="<?= base_url() ?>public/assets/img/wild/about/DJI_0841.JPG" width="30%">
+                            <img class="mt-2" src="<?= base_url() ?>public/assets/img/wild/about/IMG_5413.JPG"
+                                width="30%">
+                            <img class="mt-2" src="<?= base_url() ?>public/assets/img/wild/about/IMG_5433.JPG"
+                                width="30%">
+                            <img class="mt-2" src="<?= base_url() ?>public/assets/img/wild/about/IMG_5435.JPG"
+                                width="30%">
+                        </a>
+                    </div>
+
+                </div>
+
+
+
             </div>
         </div>
     </div>
@@ -86,7 +99,8 @@
 
             <div class="row y-gap-30 justify-between md:justify-center items-center">
                 <div class="col-md-auto">
-                    <div class="text-15 text-center text-white-60">Copyright © 2024 by wild parrot</div>
+                    <div class="text-15 text-center text-white-60-">Copyright © <span id="current-year"></span> by wild
+                        parrot</div>
                 </div>
 
                 <div class="col-md-auto">

@@ -8,6 +8,8 @@
 <script src="<?= base_url() ?>public/assets/js/main.js"></script>
 
 <script src="<?= base_url() ?>public/assets/js/FlyBackground.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
     window.addEventListener("scroll", function () {
         let arrow = document.getElementById("scrollArrow");
@@ -30,5 +32,21 @@
             velocity: '3',
             color: 'rgb(255, 255, 255, 1)'
         });
+
+
+        let year = new Date().getFullYear();
+        $('#current-year').text(year);
     })
+
+
+
+</script>
+<script>
+
+    $(window).mousemove(function (e) {
+        $("#cursor").css({
+            transform: `translate(${e.clientX}px, ${e.clientY}px)`
+        });
+    });
+
 </script>

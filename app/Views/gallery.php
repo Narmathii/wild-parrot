@@ -17,15 +17,13 @@
 <body>
     <?php require("components/header.php") ?>
 
+    
     <!-- cursor start -->
-    <div class="cursor js-cursor">
-        <div class="cursor__wrapper">
-            <div class="cursor__follower js-follower"></div>
-            <div class="cursor__label js-label"></div>
-            <div class="cursor__icon js-icon"></div>
-        </div>
+    <div id="cursor" class="cursor">
+        <img src="<?= base_url() ?>public/assets/img/cursor3.png" alt="Bird Cursor" class="bird-cursor" width="200px" />
     </div>
     <!-- cursor end -->
+    
 
     <main>
         <?php require("components/headerMain.php") ?>

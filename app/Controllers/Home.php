@@ -17,13 +17,18 @@ class Home extends BaseController
     {
         return view('about');
     }
-      public function gallery()
+    public function gallery()
     {
         return view('gallery');
     }
 
-       public function animation()
+    public function animation()
     {
         return view('animation');
+    }
+
+    public function curser()
+    {
+        return view('curser');
     }
 }
