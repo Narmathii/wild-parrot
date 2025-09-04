@@ -11,25 +11,20 @@
     text-align: center !important;
     width: 100% !important;
   }
+
+  
 </style>
 
+
 <body>
+  <div id="loader">
+    <img src="<?= base_url() ?>public/assets/loader.gif" alt="Loading...">
+  </div>
   <?php require("components/header.php") ?>
 
+  <?php require("components/commonAudio.php") ?>
 
-  <!-- cursor start -->
-  <div id="cursor" class="cursor">
-    <img src="<?= base_url() ?>public/assets/img/cursor3.png" alt="Bird Cursor" class="bird-cursor" width="200px" />
-  </div>
-  <!-- cursor end -->
-
-  <!-- Audio with controls -->
-  <audio id="bg-audio" autoplay loop muted hidden>
-    <source src="<?= base_url('public/audio/nature.mp3') ?>" type="audio/mpeg">
-  </audio>
-
-
-  <main>
+  <main class="">
     <?php require("components/headerMain.php") ?>
 
     <section data-anim-wrap class="hero -type-1 z-1 Background">
@@ -47,7 +42,7 @@
               </div>
 
               <h1 class="hero__title text-white">
-                Experience Unparalleled<br class="md:d-none"> Comfort
+                Experience Unparalleled Comfort
               </h1>
             </div>
           </div>
@@ -1128,6 +1123,11 @@
 
   <!-- JavaScript -->
   <?php require("components/jsfile.php") ?>
+
+
+
+
+
 </body>
 
 </html>

@@ -25,7 +25,63 @@
 
             <div class="line -vertical bg-white-10 h-full ml-90 mr-90 xl:d-none"></div>
 
-            <a href="<?= base_url() ?>contact" class="button text-white mr-30 xl:d-none">BOOK YOUR ENQUIRY</a>
+            <a class="button text-white mr-30 xl:d-none book-enquiry">BOOK YOUR ENQUIRY</a>
         </div>
     </div>
 </header>
+
+<div class="modal fade" id="booknowModal" tabindex="-1" aria-labelledby="booknowModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="booknowModal">Book Your Enquiry</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="contactForm">
+                    <div class="mb-3 form-input-">
+                        <label for="recipient-name" class="col-form-label">Name</label>
+                        <input type="text" class="cust-name" name="cust_name" id="cust_name">
+                    </div>
+
+                    <div class="mb-3 form-input-">
+                        <label for="recipient-name" class="col-form-label">Number</label>
+                        <input type="number" class="cust-number" name="number" id="number">
+                    </div>
+                    <div class="mb-3 form-input-">
+                        <label for="recipient-name" class="col-form-label">Email</label>
+                        <input type="email" class="cust-email" name="email" id="email">
+                    </div>
+
+                    <div class="mb-3 form-input-">
+                        <label for="recipient-name" class="col-form-label">Email</label>
+                        <select class="services" name="services" id="services">
+                            <option value="">Select Services</option>
+
+                            <option value="Investment / Villa Ownership">Investment / Villa Ownership
+                            </option>
+                            <option value="Book a Site Visit">Book a Site Visit</option>
+                            <option value="Pre-Booking / Early Reservation">Pre-Booking / Early Reservation
+                            </option>
+                            <option value="Get Project Updates">Get Project Updates</option>
+                            <option value="Partnership / Collaboration">Partnership / Collaboration</option>
+                            <option value="Request Pricing Details">Request Pricing Details</option>
+                            <option value="Download Brochure / Master Plan">Download Brochure / Master Plan
+                            </option>
+                            <option value="Schedule a Call / Consultation">Schedule a Call / Consultation
+                            </option>
+
+                        </select>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-dark">Send message</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

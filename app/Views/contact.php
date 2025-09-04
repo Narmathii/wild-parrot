@@ -17,14 +17,10 @@
 
 <body>
     <?php require("components/header.php") ?>
-    <!-- cursor start -->
-    <div id="cursor" class="cursor">
-        <img src="<?= base_url() ?>public/assets/img/cursor3.png" alt="Bird Cursor" class="bird-cursor" width="200px" />
-    </div>
-    <!-- cursor end -->
-
-
     
+    <?php require("components/commonAudio.php") ?>
+
+
 
     <main>
         <?php require("components/headerMain.php") ?>
@@ -52,6 +48,8 @@
         </section>
 
         <section class="layout-pt-lg layout-pb-lg">
+
+
             <div class="container">
                 <div class="row justify-center text-center">
                     <div class="col-xl-8 col-lg-10">
@@ -76,53 +74,75 @@
 
                         <div class="text-15 uppercase mb-20">Get In touch</div>
                         <h2 class="text-64 md:text-40 capitalize">Leave us your info</h2>
-                        <!-- <p class="lh-17 mt-30">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor tellus vel mauris
-                            scelerisque accumsan.
-                            Maecenas quis nunc sed sapien dignissim pulvinar. Se d at gravida.
-                        </p> -->
 
-                        <div class="contactForm row y-gap-30 pt-60">
+
+                        <form class="contactForm row y-gap-30 pt-60">
                             <div class="col-md-6">
 
                                 <div class="form-input ">
-                                    <input type="text" required class="">
-                                    <label class="lh-1 text-16 text-light-1">First Name</label>
+                                    <input type="text" class="cust-name" name="cust_name" id="cust_name">
+                                    <label class="lh-1 text-16 text-light-1">Name</label>
                                 </div>
+
 
                             </div>
                             <div class="col-md-6">
-
                                 <div class="form-input ">
-                                    <input type="text" required class="">
-                                    <label class="lh-1 text-16 text-light-1">Last Name</label>
+                                    <input type="number" class="cust-number" name="number" id="number">
+                                    <label class="lh-1 text-16 text-light-1">Number</label>
+                                </div>
+
+
+                            </div>
+                            <div class="col-12">
+                                <div class="form-input ">
+                                    <input type="email" class="cust-email" name="email" id="email">
+                                    <label class="lh-1 text-16 text-light-1 ">Email</label>
                                 </div>
 
                             </div>
                             <div class="col-12">
 
                                 <div class="form-input ">
-                                    <input type="email" required class="">
-                                    <label class="lh-1 text-16 text-light-1">Email</label>
-                                </div>
+                                    <select class="services" name="services" id="services">
+                                        <option value="">Select Services</option>
 
+                                        <option value="Investment / Villa Ownership">Investment / Villa Ownership
+                                        </option>
+                                        <option value="Book a Site Visit">Book a Site Visit</option>
+                                        <option value="Pre-Booking / Early Reservation">Pre-Booking / Early Reservation
+                                        </option>
+                                        <option value="Get Project Updates">Get Project Updates</option>
+                                        <option value="Partnership / Collaboration">Partnership / Collaboration</option>
+                                        <option value="Request Pricing Details">Request Pricing Details</option>
+                                        <option value="Download Brochure / Master Plan">Download Brochure / Master Plan
+                                        </option>
+                                        <option value="Schedule a Call / Consultation">Schedule a Call / Consultation
+                                        </option>
+
+                                    </select>
+
+                                </div>
                             </div>
-                            <div class="col-12">
+                            <!-- <div class="col-12">
 
                                 <div class="form-input ">
                                     <textarea required class="border-1" rows="8"></textarea>
                                     <label class="lh-1 ">Comment</label>
                                 </div>
 
-                            </div>
+                            </div> -->
                             <div class="col-12">
-                                <button class="button -md -type-2 w-1/1 bg-accent-2 -accent-1">SEND YOUR
+                                <button type="submit"
+                                    class="button -md -type-2 w-1/1 bg-accent-2 -accent-1 submit-form">SEND YOUR
                                     MESSAGE</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
+
+            <div id="whatsapp-container"></div>
         </section>
 
         <section class="relative layout-pt-lg layout-pb-lg md:pt-0 bg-accent-1">
@@ -167,6 +187,9 @@
 
     <!-- JavaScript -->
     <?php require("components/jsfile.php") ?>
+
+
+
 </body>
 
 

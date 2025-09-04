@@ -8,7 +8,7 @@
 <script src="<?= base_url() ?>public/assets/js/main.js"></script>
 
 <script src="<?= base_url() ?>public/assets/js/FlyBackground.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="<?= base_url() ?>public/assets/js/contact.js"></script>
 
 <script>
     window.addEventListener("scroll", function () {
@@ -49,4 +49,47 @@
         });
     });
 
+</script>
+
+
+<!-- Enquiry Form -->
+<script>
+    $(".book-enquiry").click(function () {
+        $(".contactForm").find("input,select,textarea").val("");
+        $("#booknowModal").modal("show")
+    })
+
+</script>
+
+
+<!-- Audio Play -->
+<script>
+    const audio = document.getElementById("bg-audio");
+    document.addEventListener("click", () => {
+        play10sLoop();
+    }, { once: true });
+
+    function play10sLoop() {
+
+        audio.currentTime = 0;
+        audio.play();
+
+        setTimeout(() => {
+            audio.pause();
+            audio.currentTime = 0;
+        }, 10000);
+
+        // Schedule next play after 20 seconds (10s play + 10s pause)
+        setTimeout(() => {
+            play10sLoop();
+        }, 20000);
+    }
+</script>
+
+<script>
+    $(window).on("load", function () {
+        $("#loader").fadeOut(500, function () {
+            $(".content").fadeIn(500);
+        });
+    })
 </script>

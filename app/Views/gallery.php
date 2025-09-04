@@ -15,15 +15,16 @@
 </style>
 
 <body>
+    <div id="loader">
+        <img src="<?= base_url() ?>public/assets/loader.gif" alt="Loading...">
+    </div>
+
+
     <?php require("components/header.php") ?>
 
-    
-    <!-- cursor start -->
-    <div id="cursor" class="cursor">
-        <img src="<?= base_url() ?>public/assets/img/cursor3.png" alt="Bird Cursor" class="bird-cursor" width="200px" />
-    </div>
-    <!-- cursor end -->
-    
+
+    <?php require("components/commonAudio.php") ?>
+
 
     <main>
         <?php require("components/headerMain.php") ?>

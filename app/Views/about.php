@@ -16,21 +16,18 @@
 </style>
 
 <body>
+
+    <div id="loader">
+        <img src="<?= base_url() ?>public/assets/loader.gif" alt="Loading...">
+    </div>
+    
     <?php require("components/header.php") ?>
 
 
 
-    <!-- cursor start -->
-    <!-- cursor start -->
-    <div id="cursor" class="cursor">
-        <img src="<?= base_url() ?>public/assets/img/cursor3.png" alt="Bird Cursor" class="bird-cursor" width="200px" />
-    </div>
-    <!-- cursor end -->
-    <!-- cursor end -->
+    <?php require("components/commonAudio.php") ?>
 
     <main>
-
-
         <?php require("components/headerMain.php") ?>
 
         <section data-anim-wrap class="pageHero -type-2 -items-center Background">
@@ -204,12 +201,7 @@
                     <div data-anim="img-right cover-white delay-1" class="col-xl-12 col-lg-12">
                         <img src="<?= base_url() ?>public/assets/img/layout.jpg" alt="image">
                     </div>
-
-
                 </div>
-
-
-
             </div>
         </section>
 
