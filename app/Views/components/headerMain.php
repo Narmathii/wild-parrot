@@ -7,7 +7,7 @@
                 <div class="text-15 uppercase text-white ml-30 sm:d-none">Menu</div>
             </button>
 
-            <div class="d-flex items-center ml-90 xl:d-none">
+            <div class="d-flex items-center ml-90 xl:d-none mobile-view">
                 <i class="icon-phone text-20 text-white mr-30"></i>
                 <div class="text-15 uppercase text-white">+91 880716781</div>
             </div>
@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div class="header__right d-flex items-center h-full">
+        <div class="header__right d-flex items-center h-full mobile-view">
             <a href="<?= base_url() ?>gallery" class="button text-white mr-30 xl:mr-0"> Gallery</a>
 
             <div class="line -vertical bg-white-10 h-full ml-90 mr-90 xl:d-none"></div>
@@ -41,21 +41,21 @@
                 <form class="contactForm">
                     <div class="mb-3 form-input-">
                         <label for="recipient-name" class="col-form-label">Name</label>
-                        <input type="text" class="cust-name" name="cust_name" id="cust_name">
+                        <input type="text" class="cust-name" name="cust_name">
                     </div>
 
                     <div class="mb-3 form-input-">
                         <label for="recipient-name" class="col-form-label">Number</label>
-                        <input type="number" class="cust-number" name="number" id="number">
+                        <input type="number" class="cust-number" name="number" >
                     </div>
                     <div class="mb-3 form-input-">
                         <label for="recipient-name" class="col-form-label">Email</label>
-                        <input type="email" class="cust-email" name="email" id="email">
+                        <input type="email" class="cust-email" name="email">
                     </div>
 
                     <div class="mb-3 form-input-">
                         <label for="recipient-name" class="col-form-label">Email</label>
-                        <select class="services" name="services" id="services">
+                        <select class="services" name="services">
                             <option value="">Select Services</option>
 
                             <option value="Investment / Villa Ownership">Investment / Villa Ownership

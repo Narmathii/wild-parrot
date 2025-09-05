@@ -1,16 +1,18 @@
 $(".contactForm").on("submit", function (e) {
   e.preventDefault();
-  
-  $(".cust-name, .cust-number, .cust-email, .services").css({
+
+  let form = $(this);
+
+  form.find(".cust-name, .cust-number, .cust-email, .services").css({
     border: "1px solid #ccc",
   });
 
   let valid = true;
 
-  let name = $(".cust-name").val();
-  let number = $(".cust-number").val();
-  let email = $(".cust-email").val();
-  let service = $(".services").val();
+  let name = form.find(".cust-name").val();
+  let number = form.find(".cust-number").val();
+  let email = form.find(".cust-email").val();
+  let service = form.find(".services").val();
 
   if (name == "") {
     $(".cust-name").css({ border: "1px solid red" });
@@ -53,10 +55,15 @@ $(".contactForm").on("submit", function (e) {
 
     let whatsappNumber = "919360842118";
 
-    window.open(
-      `https://wa.me/${whatsappNumber}?text=${encodedMessage}`,
-      "_blank"
-    );
+    let isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    console.log(isMobile);
+
+    let url = isMobile
+      ? `whatsapp://send?phone=${whatsappNumber}&text=${encodedMessage}` // open in WhatsApp app
+      : `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`; // open in WhatsApp Web
+
+    window.open(url, "_blank");
   }
 
   $(".cust-name, .cust-number, .cust-email").on("input", function () {
@@ -78,5 +85,3 @@ function IsEmail(email) {
     /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(email);
 }
-
-

@@ -17,14 +17,15 @@
 
 <body>
     <?php require("components/header.php") ?>
-    
+
     <?php require("components/commonAudio.php") ?>
 
 
 
     <main>
         <?php require("components/headerMain.php") ?>
-        <section data-anim-wrap class="pageHero -type-1 -items-center Background">
+
+        <section data-anim-wrap class="pageHero -type-2 -items-center Background">
             <canvas class="Background"></canvas>
             <div data-anim-child="img-right cover-white delay-1" class="pageHero__bg">
                 <img src="<?= base_url() ?>public/assets/img/wild/about/background.jpg" alt="image">
@@ -33,23 +34,21 @@
             <div class="container container-animated">
                 <div class="row justify-center">
                     <div class="col-auto">
-                        <div data-split='lines' data-anim="split-lines delay-3" class="pageHero__content text-center">
-                            <h1 class="pageHero__title lh-11 capitalize text-white">
-                                Contact
-                            </h1>
-                            <p class="pageHero__text lh-17 text-white mt-30">
-                                Have questions or need directions? Feel free to call or email us—here’s all the contact
-                                information you’ll need.
-                            </p>
+                        <div data-split='lines' data-anim="split-lines delay-3"
+                            class="pageHero__content text-center mobile-banner">
+                            <!-- <div class="pageHero__subtitle text-white uppercase mb-20">SINCE 1998</div> -->
+                            <h1 class="pageHero__title lh-11 capitalize text-white">Contact</h1>
+                            <p class="pageHero__text text-white"> Have questions or need directions? Feel free to call
+                                or email us—here’s all the contact
+                                information you’ll need.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+
         <section class="layout-pt-lg layout-pb-lg">
-
-
             <div class="container">
                 <div class="row justify-center text-center">
                     <div class="col-xl-8 col-lg-10">
@@ -80,7 +79,7 @@
                             <div class="col-md-6">
 
                                 <div class="form-input ">
-                                    <input type="text" class="cust-name" name="cust_name" id="cust_name">
+                                    <input type="text" class="cust-name" name="cust_name">
                                     <label class="lh-1 text-16 text-light-1">Name</label>
                                 </div>
 
@@ -88,7 +87,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-input ">
-                                    <input type="number" class="cust-number" name="number" id="number">
+                                    <input type="number" class="cust-number" name="number">
                                     <label class="lh-1 text-16 text-light-1">Number</label>
                                 </div>
 
@@ -96,7 +95,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-input ">
-                                    <input type="email" class="cust-email" name="email" id="email">
+                                    <input type="email" class="cust-email" name="email">
                                     <label class="lh-1 text-16 text-light-1 ">Email</label>
                                 </div>
 
@@ -104,7 +103,7 @@
                             <div class="col-12">
 
                                 <div class="form-input ">
-                                    <select class="services" name="services" id="services">
+                                    <select class="services" name="services">
                                         <option value="">Select Services</option>
 
                                         <option value="Investment / Villa Ownership">Investment / Villa Ownership
@@ -187,9 +186,6 @@
 
     <!-- JavaScript -->
     <?php require("components/jsfile.php") ?>
-
-
-
 </body>
 
 

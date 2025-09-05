@@ -274,7 +274,7 @@
 
                 <div class="swiper-slide">
                   <a href="<?= base_url() ?>contact" data-anim-wrap
-                    class="roomCard -type-1 -hover-button-center -image-border">
+                    class="roomCard -type-1 -hover-button-center- -image-border">
                     <div data-anim-child="img-right cover-accent-1 delay-1">
                       <div class="roomCard__image ratio ratio-76:62 -hover-button-center__wrap">
                         <img src="<?= base_url() ?>public/assets/img/wild/img1.jpeg" alt="image" class="img-ratio">
@@ -311,7 +311,7 @@
 
                 <div class="swiper-slide">
                   <a href="<?= base_url() ?>contact" data-anim-wrap
-                    class="roomCard -type-1 -hover-button-center -image-border">
+                    class="roomCard -type-1 -hover-button-center- -image-border">
                     <div data-anim-child="img-right cover-accent-1 delay-1">
                       <div class="roomCard__image ratio ratio-76:62 -hover-button-center__wrap">
                         <img src="<?= base_url() ?>public/assets/img/wild/img2.jpeg" alt="image" class="img-ratio">
@@ -348,7 +348,7 @@
 
                 <div class="swiper-slide">
                   <a href="<?= base_url() ?>contact" data-anim-wrap
-                    class="roomCard -type-1 -hover-button-center -image-border">
+                    class="roomCard -type-1 -hover-button-center- -image-border">
                     <div data-anim-child="img-right cover-accent-1 delay-1">
                       <div class="roomCard__image ratio ratio-76:62 -hover-button-center__wrap">
                         <img src="<?= base_url() ?>public/assets/img/wild/img7.jpeg" alt="image" class="img-ratio">
@@ -384,7 +384,7 @@
                 </div>
                 <div class="swiper-slide">
                   <a href="<?= base_url() ?>contact" data-anim-wrap
-                    class="roomCard -type-1 -hover-button-center -image-border">
+                    class="roomCard -type-1 -hover-button-center- -image-border">
                     <div data-anim-child="img-right cover-accent-1 delay-1">
                       <div class="roomCard__image ratio ratio-76:62 -hover-button-center__wrap">
                         <img src="<?= base_url() ?>public/assets/img/wild/img3.jpeg" alt="image" class="img-ratio">
@@ -421,7 +421,7 @@
 
                 <div class="swiper-slide">
                   <a href="<?= base_url() ?>contact" data-anim-wrap
-                    class="roomCard -type-1 -hover-button-center -image-border">
+                    class="roomCard -type-1 -hover-button-center- -image-border">
                     <div data-anim-child="img-right cover-accent-1 delay-1">
                       <div class="roomCard__image ratio ratio-76:62 -hover-button-center__wrap">
                         <img src="<?= base_url() ?>public/assets/img/wild/img6.jpeg" alt="image" class="img-ratio">
@@ -457,7 +457,7 @@
                 </div>
                 <div class="swiper-slide">
                   <a href="<?= base_url() ?>contact" data-anim-wrap
-                    class="roomCard -type-1 -hover-button-center -image-border">
+                    class="roomCard -type-1 -hover-button-center- -image-border">
                     <div data-anim-child="img-right cover-accent-1 delay-1">
                       <div class="roomCard__image ratio ratio-76:62 -hover-button-center__wrap">
                         <img src="<?= base_url() ?>public/assets/img/wild/img10.jpeg" alt="image" class="img-ratio">

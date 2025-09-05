@@ -29,18 +29,20 @@
     <main>
         <?php require("components/headerMain.php") ?>
 
-        <section data-anim-wrap class="pageHero -type-1 Background">
+
+        <section data-anim-wrap class="pageHero -type-2 -items-center Background">
             <canvas class="Background"></canvas>
-            <div class="pageHero__bg" data-anim-child="img-right cover-white delay-1">
+            <div data-anim-child="img-right cover-white delay-1" class="pageHero__bg">
                 <img src="<?= base_url() ?>public/assets/img/wild/about/background.jpg" alt="image">
             </div>
 
             <div class="container container-animated">
                 <div class="row justify-center">
                     <div class="col-auto">
-                        <div class="pageHero__content text-center" data-split='lines'
-                            data-anim-child="split-lines delay-3">
-                            <h1 class="pageHero__title text-white">Gallery</h1>
+                        <div data-split='lines' data-anim="split-lines delay-3"
+                            class="pageHero__content text-center mobile-banner">
+                            <!-- <div class="pageHero__subtitle text-white uppercase mb-20">SINCE 1998</div> -->
+                            <h1 class="pageHero__title lh-11 capitalize text-white">Gallery</h1>
                             <p class="pageHero__text text-white">Nestled in the serene landscapes of Anaikatti, Kerala,
                                 it’s your ultimate escape into paradise.</p>
                         </div>
@@ -48,6 +50,7 @@
                 </div>
             </div>
         </section>
+
 
         <section class="layout-pt-lg layout-pb-lg">
             <div class="container">

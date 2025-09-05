@@ -8,7 +8,7 @@
 <script src="<?= base_url() ?>public/assets/js/main.js"></script>
 
 <script src="<?= base_url() ?>public/assets/js/FlyBackground.js"></script>
-<script src="<?= base_url() ?>public/assets/js/contact.js"></script>
+
 
 <script>
     window.addEventListener("scroll", function () {
@@ -93,3 +93,28 @@
         });
     })
 </script>
+
+<script>
+
+
+    function handleMobileView() {
+        var mobileViewElement = $('.mobile-view');
+        if ($(window).width() <= 801) {
+
+            mobileViewElement.removeClass('d-flex').addClass('d-none');
+        } else {
+
+            mobileViewElement.removeClass('d-none').addClass('d-flex');
+        }
+    }
+    $(document).ready(function () {
+        handleMobileView();
+
+        $(window).resize(function () {
+            handleMobileView();
+        });
+    })
+</script>
+
+
+<script src="<?= base_url() ?>public/assets/js/contact.js"></script>
